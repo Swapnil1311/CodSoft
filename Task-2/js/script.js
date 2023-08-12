@@ -25,12 +25,31 @@ $themeBtn.addEventListener("click", changeTheme);
 
 // Tab
 
-const $tabBtn = document.querySelectorAll("[data-tab-btn]");
-let [lastActiveTab] = document.querySelectorAll("[data-tab-content]");
-let [lastActiveTabBtn] = $tabBtn;
+// const $tabBtn = document.querySelectorAll("[data-tab-btn]");
+// let [lastActiveTab] = document.querySelectorAll("[data-tab-content]");
+// let [lastActiveTabBtn] = $tabBtn;
 
-$tabBtn.forEach(item =>{
-    item.addEventListener("click", function(){
+// $tabBtn.forEach(item =>{
+//     item.addEventListener("click", function(){
+//         lastActiveTab.classList.remove("active");
+//         lastActiveTabBtn.classList.remove("active");
+
+//         const $tabContent = document.querySelector(`[data-tab-content="${item.dataset.tabBtn}"]`);
+//         $tabContent.classList.add("active");
+//         this.classList.add('active');
+
+//         lastActiveTab = $tabContent;
+//         lastActiveTabBtn = this;
+//     });
+// });
+
+const $tabContents = document.querySelectorAll("[data-tab-content]");
+const $tabBtns = document.querySelectorAll("[data-tab-btn]");
+let lastActiveTab = $tabContents[0];
+let lastActiveTabBtn = $tabBtns[0];
+
+$tabBtns.forEach(item => {
+    item.addEventListener("click", function() {
         lastActiveTab.classList.remove("active");
         lastActiveTabBtn.classList.remove("active");
 

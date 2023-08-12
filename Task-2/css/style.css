@@ -790,13 +790,13 @@ body{
     }
 
     .primary-tabs{
-        z-index: 1;
+        z-index: 2;
     }
 
     .hero .container{
         grid-template-columns: 0.2fr 1fr;
     }
-} */
+}
 
 
 @media (min-width: 1200px){
@@ -816,4 +816,4 @@ body{
         grid-template-columns: 0.6fr 1fr;
         gap: 24px;
     }
-}
+} */
