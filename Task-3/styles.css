@@ -52,7 +52,7 @@ button{
     background: transparent;
     color: white;
     font-size: 25px;
-    box-shadow: -5px -5px 10px rgba(167, 237, 246, 0.1);
+    box-shadow: -5px -5px 10px rgba(17, 135, 151, 0.2);
     cursor: pointer;
 }
 
@@ -63,6 +63,7 @@ button{
 
 .btn_2{
     background-color: #61677A;
+    box-shadow: -4px -4px 15px rgba(50, 114, 210, 0.5);
 }
 
 
